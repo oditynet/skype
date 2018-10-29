@@ -39,4 +39,4 @@ RUN apt-get update \
 
 USER user
 VOLUME /home/user
-CMD ["skypefordocker"]
+CMD ["skypeforlinux"]
