@@ -37,8 +37,6 @@ RUN apt-get update \
 		xauth \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY skypefordocker /usr/bin/
-
 USER user
 VOLUME /home/user
 CMD ["skypefordocker"]
