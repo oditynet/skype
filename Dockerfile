@@ -33,7 +33,8 @@ ENV SKYPE_VERSION 5.0.0.5
 
 RUN apt-get update \
 	&& apt-get install -y \
-		skypeforlinux="$SKYPE_VERSION" xauth \
+		skypeforlinux="$SKYPE_VERSION" \
+		xauth \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY skypefordocker /usr/local/bin/
